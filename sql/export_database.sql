@@ -1,2 +1,5 @@
-call CSVWRITE ( 'C:/Users/david/IdeaProjects/ExampleLibrary/TestApp/MyCSV.csv', 'SELECT * FROM water_pipeline_description' );
-call CSVWRITE ( 'C:/Users/david/IdeaProjects/ExampleLibrary/TestApp/MyCSVR.csv', 'SELECT * FROM two_point_search_root' );
+LOAD DATA INFILE 'C:/Users/david/IdeaProjects/ExampleLibrary/TestApp/result.csv'
+    INTO TABLE `result`
+    FIELDS TERMINATED BY ';' ENCLOSED BY '"' ESCAPED BY '\\'
+    LINES STARTING BY '' TERMINATED BY '\r\n'
+    IGNORE 1 LINES;
