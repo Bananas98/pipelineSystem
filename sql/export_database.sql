@@ -1,0 +1,2 @@
+call CSVWRITE ( 'C:/Users/david/IdeaProjects/ExampleLibrary/TestApp/MyCSV.csv', 'SELECT * FROM water_pipeline_description' );
+call CSVWRITE ( 'C:/Users/david/IdeaProjects/ExampleLibrary/TestApp/MyCSVR.csv', 'SELECT * FROM two_point_search_root' );
